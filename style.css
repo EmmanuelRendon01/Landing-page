@@ -1,0 +1,222 @@
+:root{
+    --primary-color: #4e3b31;
+    --text-color: white;
+    --bold: bold;
+
+    /* Font */
+
+    --title-font: 'Times New Roman', Times, serif;
+
+    /* Fonts-Size */
+
+    --title-size: 5rem;
+    --text-size: 1.4rem;
+}
+
+
+/* 1. Usa box-sizing más predecible */
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* 2. Elimina márgenes y paddings innecesarios  */
+body,
+h1, h2, h3, h4, h5, h6,
+p, figure, blockquote,
+dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* / 3. Mejora el rendering del texto / */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: system-ui, sans-serif;
+}
+
+/* / 4. Quita la decoración de enlaces / */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* / 5. Imágenes adaptables / */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* / 6. Formularios coherentes / */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* / 7. Elimina listas decorativas / */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* / 8. Mejora del scroll */ */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* ESTILOS GENERALES */
+
+h1, h2, h3, h4, h5 ,h6{
+    font-family: var(--title-font);
+}
+
+p{
+    font-size: var(--font-size-base);
+    font-family: Arial, sans-serif;
+}
+
+a{  
+    font-size: var(--font-size-base);
+}
+
+/* NAV-BAR */
+
+/* BLOCK */
+
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    padding-right: 1rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+
+}
+
+/* ELEMENT */
+
+.nav-bar a{
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.nav-logo{
+    list-style: none;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li{
+    display: inline-block;
+}
+
+/* PRESENTATION */
+
+/* BLOCK */
+
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e3b31;
+    height: 92vh;
+}
+
+/* ELEMENTS */
+
+.p-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.p-info h2{
+    text-align: center;
+    color: var(--text-color);
+    font-weight: var(--bold);
+    font-size: var(--title-size);
+}
+
+.p-info p{
+    color: var(--text-color);
+    font-size: var(--text-size);
+}
+
+.p-button{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+    height: 4rem;
+    width: 8rem;
+    font-weight: var(--bold);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: peru;
+}
+
+/* ABOUT */
+
+/* BLOCK */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+
+/* ELEMENTS */
+
+.about-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: var(--text-size);
+    color: var(--text-color);
+}
+
+.about-img{
+    width: 60vh;
+}
+
+
+
+/* SERVICES */
+
+/* BLOCK */
+
+.services{
+    padding-top: 10vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.services-info{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
