@@ -10,6 +10,7 @@
     /* Fonts-Size */
 
     --title-size: 5rem;
+    --subtitle-size: 3rem;
     --text-size: 1.4rem;
 }
 
@@ -184,7 +185,6 @@ a{
     background-color: var(--primary-color);
 }
 
-
 /* ELEMENTS */
 
 .about-info{
@@ -200,23 +200,81 @@ a{
     width: 60vh;
 }
 
-
-
 /* SERVICES */
 
 /* BLOCK */
 
 .services{
-    padding-top: 10vh;
+    padding-top: 40vh;
     background-color: var(--primary-color);
     display: flex;
     justify-content: center;
+    padding-bottom: 40vh;
 }
 
 .services-info{
     width: 80%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    color: var(--text-color);
 }
+
+
+/* ELEMENTS */
+
+.services-info ul{
+    width: 80vh;
+}
+
+.services-info li{
+    font-size: var(--text-size);
+}
+
+.services-info h2{
+    font-size: var(--title-size);
+}
+
+/* FORM */
+
+/* BLOCK */
+
+.email-form{
+    background-image: url(./Jarrón.jpeg);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20vh;
+    gap: 5vh;
+}
+
+.email-form h2{
+    color: var(--text-color);
+    font-size: var(--subtitle-size);
+}
+
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+form input{
+    background-color: transparent;
+    border-color: white;
+}
+
+.form-value{
+    font-size: 1rem;
+    color: white;
+    font-weight: var(--bold);
+}
+
+
+
+
+
+
 
