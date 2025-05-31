@@ -111,6 +111,7 @@ a{
 .nav-bar a{
     color: var(--text-color);
     font-weight: bold;
+    padding-left: 5vh;
 }
 
 .nav-logo{
